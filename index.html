@@ -7,6 +7,19 @@
 		<style type='text/css'>
 		html, body{
   height:100%;
+  	margin:0;
+	padding:0;
+}
+.hi { 
+	background: white center center scroll; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.hi{
+	height: 100%;
 }
 			.kwicks {
 				height: 100%;
@@ -19,10 +32,17 @@
 			#panel-2 { background-color: #DD4840; }
 			#panel-3 { background-color: #F5B962; }
 			#panel-4 { background-color: #552884; }
+			@media only screen and (max-width: 500px){
+				.kwicks > li{
+					display: block;
+				}
+			}
 		</style>
 	</head>
 	
 	<body>
+		<div class="hi">im calie
+		</div>
 		<ul class='kwicks kwicks-horizontal'>
 			<li id='panel-1' class="project">HTML Editor</li>
 			<li id='panel-2' class="project">Marketing Automation</li>
@@ -30,7 +50,7 @@
 			<li id='panel-4' class="project">Charting Library</li>
 		</ul>
 
-		<p>Watch Kwicks react as you resize the window!</p>
+	
 
 		<script src='js/jquery-1.8.1.min.js' type='text/javascript'></script>
 		<script src='jquery.kwicks.js' type='text/javascript'></script>
