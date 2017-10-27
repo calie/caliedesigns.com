@@ -11,18 +11,38 @@
 	padding:0;
 }
 .hi { 
-	background: white center center scroll; 
+	background-image: url('images/teal-bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	text-align: center;
+}
+.calie-pic{
+	margin:0 auto;
 }
 
 .hi{
-	height: 100%;
+	height: 600px;
+}
+.hi img{
+	width: 300px;
+	height: 300px;
+	margin-top: 50px;
 }
 .hi h2, .hi h3{
 	text-align: center;
+	color: #414c4c;
+	font: 44px helvetica, sans-serif;
+	margin-bottom: 5px;
+
+}
+.hi h3{
+	font: 24px helvetica, sans-serif;
+	margin: 5px auto;
+	width: 600px;
 
 }
 			.kwicks {
@@ -33,10 +53,10 @@
 				margin-left: 0;
 			}
 
-			#panel-1 { background-color: #00B8BC; }
-			#panel-2 { background-color: #DD4840; }
-			#panel-3 { background-color: #F5B962; }
-			#panel-4 { background-color: #552884; }
+			#panel-1 { background-color: #669f9d; }
+			#panel-2 { background-color: #89dad7; }
+			#panel-3 { background-color: #c2f9f2; }
+			#panel-4 { background-color: #e63f5b; }
 			@media only screen and (max-width: 500px){
 				.kwicks > li{
 					display: block;
@@ -47,8 +67,9 @@
 	
 	<body>
 		<div class="hi">
-			<h2>Welcome! I'm calie - I love making great products. </h2>
-			<h3>Here are some of the projects I'm working on:</h3>
+			<img src="images/calie.png" class="calie-pic"/>
+			<h2>Hi, I'm Calie.</h2>
+			<h3>UX Designer / Product Manager / Automation Specialist <br/> Here are some of the projects I'm working on:</h3>
 		</div>
 		<ul class='kwicks kwicks-horizontal'>
 			<li id='panel-1' class="project">HTML Editor</li>
