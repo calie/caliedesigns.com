@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>calie designs</title>
+
+		<link rel='stylesheet' type='text/css' href='jquery.kwicks.css' />
+		<style type='text/css'>
+		html, body{
+  height:100%;
+  	margin:0;
+	padding:0;
+}
+.hi { 
+	background-image: url('images/teal-bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+}
+.calie-pic{
+	margin:0 auto;
+}
+
+.hi{
+	height: 600px;
+}
+.hi img{
+	width: 300px;
+	height: 300px;
+	margin-top: 50px;
+}
+h2, h3{
+	text-align: center;
+	color:#414c4c;
+	
+	font: 44px helvetica, sans-serif;
+	margin-bottom: 5px;
+
+}
+h3{
+	font: 24px helvetica, sans-serif;
+	color: #414c4c;
+	margin: 5px auto;
+	width: 600px;
+
+}
+.kwicks {
+	height: 100%;
+}
+.kwicks > li {
+				height: 100%;
+				margin-left: 0;
+			}
+.kwicks h3{
+	width: 100%;
+}
+#panel-1 { background-color: #84c5c4; }
+#panel-2 { background-color: #bde3e1; }
+#panel-3 { background-color: #de817c; }
+#panel-4 { background-color: #e0a190; }
+
+
+.panel-html { 
+	background-color: #84c5c4; 
+}
+.panel-ma {
+	background-color: #bde3e1; 
+}
+.panel-quirpi { 
+	background-color: #de817c; 
+}
+.panel-charts { 
+	background-color: #e0a190; 
+}
+
+@media only screen and (max-width: 500px){
+				.kwicks > li{
+					display: block;
+				}
+			}
+
+		</style>
+	</head>
+	
+	<body>
+		<div class="hi">
+			<img src="images/calie.png" class="calie-pic"/>
+			<h2>Hi, I'm Calie.</h2>
+			<h3>UX Designer / Product Manager / Automation Specialist <br/> Here are some of the projects I've worked on recently:</h3>
+		</div>
+		<ul class='kwicks kwicks-horizontal'>
+			<li id='panel-1' class="project">
+				<h3>HTML Editor</h3>
+			</li>
+			<li id='panel-2' class="project">
+				<h3>Marketing Automation</h3>
+			</li>
+			<li id='panel-3' class="project">
+				<h3>Quirpi</h3>
+			</li>
+			<li id='panel-4' class="project">
+				<h3>Charting Library</h3>
+			</li>
+		</ul>
+
+	
+
+		<script src='js/jquery-1.8.1.min.js' type='text/javascript'></script>
+		<script src='jquery.kwicks.js' type='text/javascript'></script>
+		
+		<script type='text/javascript'>
+			$(function() {
+				$('.kwicks').kwicks({
+					maxSize: '75%',
+					behavior: 'menu'
+				});
+			});
+		</script>
+	</body>
+</html>
