@@ -8,39 +8,6 @@
   box-sizing: border-box;
 }
 
-body {
-  /* padding: 4em 1em;*/
-  font-family: "Poppins", sans-serif;
-  font-size: 100%;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-}
-@media (min-width: 22em) {
-  body {
-    font-size: 102.5%;
-  }
-}
-@media (min-width: 32em) {
-  body {
-    font-size: 105%;
-  }
-}
-@media (min-width: 54em) {
-  body {
-    font-size: 107.5%;
-  }
-}
-@media (min-width: 65em) {
-  body {
-    font-size: 110%;
-  }
-}
-@media (min-width: 91em) {
-  body {
-    font-size: 115%;
-  }
-}
-
 h1 {
   margin: 0;
 }

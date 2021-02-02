@@ -20,33 +20,6 @@ $font: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 
-body {
- /* padding: 4em 1em;*/
-  font-family: $font;
-  font-size: 100%;
-  line-height: 1.6;
-  background-color: $color-lightgrey;
-
-  @media (min-width: $mq-xsmall) {
-    font-size: 102.5%;
-  }
-
-  @media (min-width: $mq-small) {
-    font-size: 105%;
-  }
-
-  @media (min-width: $mq-med) {
-    font-size: 107.5%;
-  }
-
-  @media (min-width: $mq-large) {
-    font-size: 110%;
-  }
-
-  @media (min-width: $mq-xlarge) {
-    font-size: 115%;
-  }
-}
 
 h1 {
   margin: 0;
