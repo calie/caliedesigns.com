@@ -6,14 +6,19 @@ html, body{
     background:#efefef;
 }
 .hi { 
-	background-image: url('../images/bkgd.png');
+	background-image: url('../images/calie-lillis.png');
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: ;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	text-align: center;
+    text-align: center;
+    min-height: 400px;
+    display: block;
+}
+.intro.col-12{
+    margin-top:360px;
 }
 .inner-header { 
     background-image: url('../images/bkgd.png');
