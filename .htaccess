@@ -1,4 +1,4 @@
+AuthUserFile /path/to/.htpasswd
 AuthType Basic
-AuthName "restricted area"
-AuthUserFile .htpasswd
-require valid-user
+AuthName "Password Protected"
+Require valid-user
