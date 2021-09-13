@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<title>calie designs</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108999359-1"></script>
 		<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -30,7 +31,28 @@
 			boxClass: 'js-wow'
 			});
 			wow.init();
-		</script>
+        </script>
+        <script>
+                // When the user scrolls the page, execute myFunction
+                window.onscroll = function() {myFunction()};
+                
+                // Get the header
+                var header = document.getElementById("myHeader");
+                
+                // Get the offset position of the navbar
+                var sticky = header.offsetTop;
+                
+                // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                  } else {
+                    header.classList.remove("sticky");
+                  }
+                }
+            </script>
+            
+                    
     <style type="text/css">
         body{}
         .inner-hero{
@@ -48,74 +70,92 @@
 	</head>
 	
 <body>
-    <div class="inner-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <div class="logo">
-                        <a href="../index.html">Calie<span>Lillis</span></a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="links">
-                        <a href="../index.html">home</a>
-                        &nbsp; &nbsp; &nbsp; &nbsp;
-                        <a href='mailto:calie.brennan@gmail.com'>email</a> 
-                        &nbsp; &nbsp; &nbsp; &nbsp;
-                        <a href="https://www.linkedin.com/in/calie/" target="_blank">LinkedIn</a>
-                    </div>
-                </div>
+    
+    <div>
+    <div class="inner-header" id="myHeader">
+        <div class="inner-logo"></div>
+            <div class="links">
+                <a href="../index.html" class="button button--dione"><span>Home</span></a>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <!--<a href='mailto:calie.brennan@gmail.com' class="button button--dione"><span>Email</span></a>
+              
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="https://www.linkedin.com/in/calie/" target="_blank"class="button button--dione"><span>LinkedIn</span></a>-->
+                
             </div>
-        </div>
     </div>
-    <div class="container">
+    <div class="container inner-container">
         <div class="row">
             <div class="col-12">
                 <h2>Design System Unification</h2>
             </div>
+        </div>
+        <div class="row">
             <div class="col-5">
-                    <p>‘There’s certainly too much pepper in that soup!’ Alice said to herself, as well as she could for sneezing.</p>
-                    <p>‘Yes, but some crumbs must have got in as well,’ the Hatter grumbled: ‘you shouldn’t have put it in with the bread-knife.’</p>
-                    <p>She ate a little bit, and said anxiously to herself, ‘Which way? Which way?’, holding her hand on the top of her head to feel which way it was growing, and she was quite surprised to find that she remained the same size: to be sure, this generally happens when one eats cake
+                    <p>After an acquisition of 2 competing marketing automation companies there was a need to unify 
+                        products into one 
+                        experience that felt seamless as the user switched from one to the other.</p>
+                    <p>We faced many challenges including different tech stacks, multiple design systems or no design system within 
+                        existing projects and hundreds of pages with minimal usage.</p>
                     
             </div>
             <div class="col-7">
                 <img src="../images/figma-components.png" class="res-image"/>
             </div>
+        </div>
+        <div class="row">
             <div class="col-12">
                 <h3>Research</h3>
-                <p>She ate a little bit, and said anxiously to herself, ‘Which way? Which way?’, holding her hand on the top of her head to feel which way it was growing, and she was quite surprised to find that she remained the same size: to be sure, this generally happens when one eats cake
+                <p>Much of the research for this project was in determining the scope of the unification efforts and focusing on the work that
+                    would create the most impact. To start, we took inventory of what
+                    pages currently existed - what kind of controls did they have and does that pattern match up with what we see in the other 
+                    products. On the <em>quantitatilve</em> side we did a deep dive into usage stats. This was an opportunity to remove any unused features and an easy way
+                    to prioritize the redsign efforts to features with the most traffic.</p>
+                <p>Some <em>qualitative</em> reseach was done up front by interviewing users to determine frustrations that they had with each product. When redesigning key components we took these
+                    concerns into account to improve usability across the board.
+                </p>
 
-                <h3>Before</h3>
+                <h3>Before Unification</h3>
                 <p>She ate a little bit, and said anxiously to herself, ‘Which way? Which way?’, holding her hand on the top of her head to feel which way it was growing, and she was quite surprised to find that she remained the same size: to be sure, this generally happens when one eats cake
 
                 <img src="../images/old-ui-2.png" class="res-image"/>
             </div>
+        </div>
+        <div class="row">
+                <div class="col-12">
+                    <h3>Implementation</h3>
+                    <p>Determining the tech stack for the new unified experience going forward was vital
+                        to our success. We evaluated VueJS and ReactJS and decided to build the new design
+                        system in React. Because there were hundreds of pages between all of the projects,
+                        my team built an intricate iframe system in order to be able to render all pages
+                        from different origin platforms into the same UI.</p>
+                    <p>To get started, I wrote a CSS-only style guide to bring the systems closer together
+                        through fonts, colors and visual style and created basic patterns in Figma to get us started. This was a quick update that would allow us
+                        to change out components as they were built in an iterative way.</p>
+                    <p>As the component library evolved, engineering teams throughout the company were able 
+                        to utilize the new React components to start updating their pages in a consistent
+                        fashion while the design team created a matching design system in Figma.
+                    </p>
+                    
+                </div>
+            </div>
+        <div class="row">
             <div class="col-12">
-                <h3>After</h3>
-                <p>She ate a little bit, and said anxiously to herself, ‘Which way? Which way?’, holding her hand on the top of her head to feel which way it was growing, and she was quite surprised to find that she remained the same size: to be sure, this generally happens when one eats cake
+                <h3>After Unification</h3>
+                <p>Below are the resulting visual designs. To measure the success of the project we used the Systems Usability Scale (SUS) to quantify usability of the products before and after the redesign.
 
                     <img src="../images/after.png" class="res-image"/>
             </div>
         </div>
-        </div>
+
+		
     </div>
-				
-							
-								
-					
-					  
-		<!--<a data-fancybox="gallery" data-caption="Charting Library" href="images/charting.png">1asfwe</a>
-<a data-fancybox="gallery" href="images/quirpi.png" data-caption="Quirpi">2oinef</a>-->
-</div>
-		<div class="footer js-wow">
+    <div class="footer js-wow">
 			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<a href='mailto:calie.brennan@gmail.com'>email me!</a> &nbsp; &nbsp;| <a href="https://www.linkedin.com/in/calie/" target="_blank">LinkedIn</a>
-					</div>
-				</div>
+				
+						<a href="https://www.linkedin.com/in/calie/" target="_blank">LinkedIn</a>
+				
 			</div>
-		</div>
+        </div>
 	</body>
 </html>
