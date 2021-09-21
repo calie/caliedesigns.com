@@ -14,13 +14,19 @@
 
 			gtag('config', 'UA-108999359-1');
 			</script>
-			
+			<script src="/js/connect.js"></script>
+		<script>
+		if(prompt("Enter password:", "") !== password) {
+  		alert('Wrong password, try again.');
+  		window.location = "/";
+							}</script>
 
 		<link href="https://fonts.googleapis.com/css?family=Lato|Patua+One" rel="stylesheet">
 		<link rel='stylesheet' type='text/css' href='css/simple-grid.min.css' />
-		
+		<link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
 		<link rel='stylesheet' type='text/css' href='css/card.css' />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		
 		<script src="node_modules/wow.js/dist/wow.min.js"></script>
 				<script>
 				new WOW().init();

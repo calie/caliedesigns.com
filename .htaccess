@@ -1,4 +1,0 @@
-AuthUserFile /path/to/.htpasswd
-AuthType Basic
-AuthName "Password Protected"
-Require valid-user

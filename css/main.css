@@ -77,7 +77,7 @@ html, body{
 	pointer-events: auto;
 	cursor: pointer;
 	border: none;
-	padding: 1.5rem 3rem;
+	padding: .5rem 2rem;
 	margin: 0;
 	font-family: inherit;
 	font-size: inherit;
@@ -118,7 +118,7 @@ html, body{
 
 .button--dione::after {
 	content: '';
-	border: 1px solid #931228;
+	border: 1px solid #B2213A;
 	transition: transform 0.3s cubic-bezier(0.2,1,0.7,1);
 	border-radius: 0px;
 	transform: scale3d(0.85, 0.65, 1);
@@ -239,5 +239,8 @@ img.quirpi{
 	.grid-container{
 		padding:4px 16px;
 		background:#efefef;
+	}
+	h2.page-title{
+		margin-left: 80px;
 	}
   }
