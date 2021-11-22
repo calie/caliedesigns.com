@@ -7,19 +7,26 @@
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108999359-1"></script>
 		<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-			<script>
+		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 
 			gtag('config', 'UA-108999359-1');
-			</script>
-			<script src="/js/connect.js"></script>
+		</script>
+		<script src="/js/connect.js"></script>
 		<script>
-		if(prompt("Enter password:", "") !== password) {
-  		alert('Wrong password, try again.');
-  		window.location = "/";
-							}</script>
+			document.addEventListener("DOMContentLoaded", function() {
+				var isshow = localStorage.getItem('isshow');
+				if (isshow== null) {
+					localStorage.setItem('isshow', 1);
+					if(prompt("Enter password:", "") !== password) {
+						alert('Wrong password, please try again.');
+						window.location = "/";
+					}
+				}
+			});
+		</script>
 
 		<link href="https://fonts.googleapis.com/css?family=Lato|Patua+One" rel="stylesheet">
 		<link rel='stylesheet' type='text/css' href='css/simple-grid.min.css' />
@@ -48,7 +55,7 @@
 				<div class="row">
 					<div class="col-12 intro">
 						<h2>Hi, I'm Calie <span style="font-style: italic; font-weight: 500p;">(KAY-lee)</span>.<!--<a href="https://www.linkedin.com/in/calie/"><img src="images/linkedin_circle_color-512.png" class="linkedin"/></a>--></h2>
-						<h3>I am a creative product design leader with 10+ years experience in SaaS environments for both B-to-B and B-to-C products. Most recently, I have enjoyed managing front-end engineering and design teams in creating and utilizing complex design systems that span multiple products.</h3>
+						<h3>I am a creative product design leader with 10+ years experience in SaaS environments for B2B, B2C, and B2B2C products. Most recently, I have enjoyed managing front-end engineering and design teams in creating and utilizing complex design systems that span multiple products.</h3>
 					</div>
 				</div>
 			</div>
@@ -56,14 +63,14 @@
 		<div class="grid-container" style="background: #efefef; padding-top:16px;">
 			
 				<div class="grid">
-						<h2 style="text-align: left;">Recent Projects</h2>
+						<h2 style="text-align: left;"><a id="projects" style="text-decoration: none; color: #444; cursor:default;">Recent Projects</a></h2>
 						<div class="flex-grid">
 							<a href="projects/design-system-unification.html">
 								<article class="flex-grid__card js-wow">
 									<div class="flex-grid__container project-card">
 									<img src="images/component-library.png"/>
 										<h3>Design System Unification</h3>
-									<p>After acquisitions, three unique products needed to be combined into one unified, 
+									<p>After acquisitions, three products were combined into one  
 										re-branded interface.</p>
 									</div>
 								</article>
@@ -112,6 +119,33 @@
 											</div>
 							</div>
 						  </article>
+						  <article class="flex-grid__card js-wow">
+								<div class="flex-grid__container">
+										<div class="flex-grid__container project-card">
+												<img src="images/community-app.png"/>
+													<h3>Community Mobile App</h3>
+												<p>Drag and drop designers for creating emails, landing pages and community sites.</p>
+												</div>
+								</div>
+							  </article>
+							  <article class="flex-grid__card js-wow">
+									<div class="flex-grid__container">
+											<div class="flex-grid__container project-card">
+													<img src="images/dnd.png"/>
+														<h3>Custom 404 Page</h3>
+													<p>Drag and drop designers for creating emails, landing pages and community sites.</p>
+													</div>
+									</div>
+								  </article>
+								  <article class="flex-grid__card js-wow">
+										<div class="flex-grid__container">
+												<div class="flex-grid__container project-card">
+														<img src="images/dnd.png"/>
+															<h3>AI Generated Newsletter</h3>
+														<p>Drag and drop designers for creating emails, landing pages and community sites.</p>
+														</div>
+										</div>
+									  </article>
 					
 						</div>
 					  </div>

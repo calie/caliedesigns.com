@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>calie designs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex">
+        <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico"/>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108999359-1"></script>
+		<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-108999359-1');
+			</script>
+
+		<link href="https://fonts.googleapis.com/css?family=Lato|Patua+One" rel="stylesheet">
+		<link rel='stylesheet' type='text/css' href='../css/simple-grid.min.css' />
+		<link rel='stylesheet' type='text/css' href='../css/main.css' />
+		<link rel='stylesheet' type='text/css' href='../css/card.css' />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<script src="node_modules/wow.js/dist/wow.min.js"></script>
+				<script>
+				new WOW().init();
+				</script>
+		<script>
+			var wow = new WOW({
+			boxClass: 'js-wow'
+			});
+			wow.init();
+        </script>
+            
+                    
+    <style type="text/css">
+        body{}
+        .inner-hero{
+            background-image: url('https://images.unsplash.com/photo-1611619032416-e68afdd3f6d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2551&q=80');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    text-align: center;
+    height:200px;
+        }
+    </style>
+	</head>
+	
+<body>
+    
+    <div>
+    <div class="inner-header" id="myHeader">
+        <div class="inner-logo"></div>
+            <div class="links">
+                <a href="../index.html" class="button button--dione"><span>Home</span></a>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <!--<a href="../index.html" class="button button--dione"><span>Projects</span></a>
+                <!--<a href='mailto:calie.brennan@gmail.com' class="button button--dione"><span>Email</span></a>
+              
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="https://www.linkedin.com/in/calie/" target="_blank"class="button button--dione"><span>LinkedIn</span></a>-->
+                
+            </div>
+    </div>
+    <div class="container inner-container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="page-title">Design System Unification</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                    <video width="1200" height="600" controls>
+                            <source src="../images/404.mp4" type="video/mp4">
+                            
+                          Your browser does not support the video tag.
+                    </video>
+            </div>
+            <div class="col-5">
+                    <p>After an acquisition of 2 competing marketing automation companies, there was a need to unify 
+                        products into one 
+                        experience that felt seamless as the user switched from one product to the other. The design system needed to meet the requirements of the existing systems while being flexibile enough to scale with new unified offerings.</p>
+                    <p>We faced many challenges including different tech stacks, multiple or non-existent design systems within 
+                        existing projects and hundreds of pages with minimal usage.</p>
+                    
+            </div>
+            <div class="col-7">
+                <img src="../images/styleguide.png" class="res-image" style="margin-top:40px; box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.24)"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3>Research</h3>
+                <p>Much of the research for this project was in determining the scope of the unification efforts and focusing on the work that
+                    would create the most impact. To start, we took inventory of what
+                    pages currently existed - what kind of controls did they have and does that pattern match up with what we see in the other 
+                    products. On the <em>quantitatilve</em> side we did a deep dive into usage stats. This was an opportunity to remove any unused features and an easy way
+                    to prioritize the redsign efforts to features with the most traffic.</p>
+                <p>Some <em>qualitative</em> reseach was done up front by interviewing users to determine frustrations that they had with each product. When redesigning key components we took these
+                    concerns into account to improve usability across the board.
+                </p>
+
+                <h3>Before Unification</h3>
+                <p>Below is the starting state of the styles of the 3 products. Designs are dated and visual styles and branding are very different.<br/><br/>
+
+                <img src="../images/old-ui-2.png" class="res-image"/>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-12">
+                    <h3>Implementation</h3>
+                    <p>Determining the tech stack for the new unified experience going forward was vital
+                        to our success. We evaluated VueJS and ReactJS and decided to build the new design
+                        system in React. Because there were hundreds of pages between all of the projects,
+                        my team built an intricate iframe system in order to be able to render all pages
+                        from different origin platforms into the same UI.</p>
+                    <p>To get started, I wrote a CSS-only style guide to bring the systems closer together
+                        through fonts, colors and visual style and created basic patterns in Figma to get us started. This was a quick update that would allow us
+                        to change out components as they were built in an iterative way.</p>
+                    <p>As the component library evolved, engineering teams throughout the company were able 
+                        to utilize the new React components to start updating their pages in a consistent
+                        fashion while the design team created a matching design system in Figma.
+                    </p>
+                    
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-12">
+                <h3>After Unification</h3>
+                <p>Below are the resulting visual designs. To measure the success of the project we used the Systems Usability Scale (SUS) to quantify usability of the products before and after the redesign.
+                    <h5>Home page</h5>
+                    <img src="../images/Home.png" class="res-image" alt="Home page"/>
+                    <h5>Data grid</h5>
+                    <img src="../images/grid.png" class="res-image" alt="Admin grid"/>
+                    <h5>User Report</h5>
+                    <img src="../images/user-tracking.png" class="res-image" alt="User Tracking"/>
+            </div>
+        </div>
+
+		
+    </div>
+    <div class="footer js-wow">
+			<div class="container">
+				
+						<a href="https://www.linkedin.com/in/calie/" target="_blank">LinkedIn</a>
+				
+			</div>
+        </div>
+	</body>
+</html>
