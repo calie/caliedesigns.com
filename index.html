@@ -20,7 +20,7 @@
 				var isshow = localStorage.getItem('isshow');
 				if (isshow== null) {
 					localStorage.setItem('isshow', 1);
-					if(prompt("Enter password:", "") !== password) {
+					while(prompt("Enter password:", "") !== password) {
 						alert('Wrong password, please try again.');
 						window.location = "/";
 					}

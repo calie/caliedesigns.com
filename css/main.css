@@ -176,6 +176,7 @@ h3{
 }
 .project-img{
 	position: relative;
+	box-shadow: 0 2px 2px rgb(182 182 182 / 25%);
 }
 .bubble{
 	position: absolute;
