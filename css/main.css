@@ -98,12 +98,16 @@ html, body{
 	border-radius: 4px;
 	font-weight: 500;
 	padding: 1.5rem 3rem;
+	color:white;
 }
 
-.button--dione span {
+.button--dione span, .button--dione span i {
 	display: inline-block;
 	position: relative;
-	color: #fff;
+	color: #fff !important;
+}
+button--dione span:before{
+	color: white !important;
 }
 
 .button--dione::before {
