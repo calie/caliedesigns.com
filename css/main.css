@@ -273,8 +273,38 @@ img.quirpi{
 		padding-top:16px;
 	}
   }
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 1366px) {
 	  .links{
 		  margin-right:16%;
 	  }
+	  .hi{
+		  height: 700px;
+	  }
+	  .hi h2 {
+		margin-top:30px;
 	}
+}
+@media only screen and (min-width: 1500px) {
+	.hi h2 {
+	  margin-top:100px;
+  }
+  .hi{
+	height: 800px;
+}
+}
+@media only screen and (min-width: 1740px) {
+	.hi h2 {
+	  margin-top:200px;
+  }
+  .hi{
+	height: 900px;
+}
+}
+@media only screen and (min-width: 2200px) {
+	.hi h2 {
+	  margin-top:300px;
+  }
+  .hi{
+	height: 1000px;
+}
+}
