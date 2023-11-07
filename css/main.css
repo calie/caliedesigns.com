@@ -224,6 +224,10 @@ img.linkedin{
 	background: #efefef;
 	text-align: center;
 	padding: 20px 0;
+	margin-top:20px;
+}
+.footer-home{
+	margin-top:0px;
 }
 .caption{
 	font-style: italic;
