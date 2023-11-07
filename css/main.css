@@ -240,6 +240,9 @@ img.quirpi{
     width: 100%;
     height: auto;
 }
+.shadow{
+	box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.24);
+}
 @media only screen and (max-width: 600px) {
 	html, body{
 		background-color:white;
@@ -298,7 +301,7 @@ img.quirpi{
   }
   .hi{
 	height: 900px;
-}
+	}
 }
 @media only screen and (min-width: 2200px) {
 	.hi h2 {
@@ -306,5 +309,6 @@ img.quirpi{
   }
   .hi{
 	height: 1000px;
+	}
 }
-}
+ 
